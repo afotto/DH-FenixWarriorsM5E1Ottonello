@@ -1,0 +1,84 @@
+* {
+    box-sizing: content-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: roboto;
+    background-color: gainsboro;
+}
+
+
+/*====================Formulario =================================*/
+.register{
+    padding: 20px 15px;
+    margin-top: 2px;
+    text-align: center;
+}
+.control-formulario{
+    margin-bottom: 15px;
+}
+.label{
+    font-style: normal;
+    width: 100%;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-align: left;
+    font-weight: bold;
+}
+.control{
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    border: none;
+    height: 30%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+.perfil{
+    margin-bottom: 15px;
+}
+
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 14px;
+    margin: 0 25px;
+    margin-bottom: 15px;
+}
+.intereses{
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column ;
+    justify-self: start;
+}
+    .check{
+        display: flex;
+        /*align-items: center;*/
+    }
+
+.buttons{
+    display: flex;
+}
+    .boton-formulario{
+        background-color:#1259c3;
+        border: none;
+        width: 80%;
+        font-size: 15px;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 4px;
+        height: 15px;
+        margin: 2px;
+    }
+
+@media (min-width:860px){
+    .form{
+        justify-content: center;
+        display: flex;
+    }
+        .register{
+            width: 500px;
+        }
+}

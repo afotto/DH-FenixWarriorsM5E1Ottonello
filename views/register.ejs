@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+
+    <section class="form">
+        <form method="POST" action="/" class="register">
+            <div class="control-formulario">
+                <input type="text" placeholder="Nombre y Apellido" name="apeynom" class="control" required minlength="3">
+            </div>            
+            <div class="control-formulario">
+                <input type="text" placeholder="Nombre de usuario" name="user" class="control" required minlength="3">
+            </div>            
+            <div class="control-formulario">
+                <input type="email" placeholder="E-mail" name="email" class="control" required>
+            </div>            
+            <div class="control-formulario">
+                <label class="label">Fecha de nacimiento</label>
+                <input type="date" placeholder="mm/dd/yyyy" name="f_nacimiento" class="control" required>
+            </div>            
+            <div class="control-formulario">
+                <input type="text" placeholder="Domicilio" name="domicilio" class="control" required>
+            </div>            
+            <div class="perfil_cont">
+                <label class="label">Perfil de usuario</label>
+                <label>
+                <input type="radio" 
+                    name="perfil_usr" class="perfil">Comprador
+                </label>
+                <label>
+                <input type="radio" 
+                    name="perfil_usr" class="perfil">Vendedor
+                </label>
+            </div>            
+            <div class="intereses">
+                <label  class="label">Intereses</label>
+                <label class="check"><input type="checkbox"  name="interes" value="electro">Electro</label>
+                <label class="check"><input type="checkbox"  name="interes" value="moda">Moda</label>
+                <label class="check"><input type="checkbox"  name="interes" value="hogar">Hogar</label>
+                <label class="check"><input type="checkbox"  name="interes" value="jugeteria">Jugetería</label>
+                <label class="check"><input type="checkbox"  name="interes" value="vida-sana">Vida sana</label>
+            </div>
+            <div class="control-formulario">
+                <label class="label">Foto de usuario</label>
+                <input type="file" placeholder="Foto de perfil" name="foto" class="control" required accept=".jpg">
+            </div>            
+            <div class="control-formulario">
+                <input type="password" placeholder="Ingrese la password" name="password" class="control" required minlength="3">
+            </div>            
+            <div class="control-formulario">
+                <input type="password" placeholder="Repita la password" name="password" class="control" required minlength="3">
+            </div>            
+            <div class="buttons">
+                <button type="submit" class="boton-formulario">Enviar</button>
+                <button type="reset" class="boton-formulario">Reset</button>
+            </div>
+        
+        </form>        
+    </section>
+
+    <%- include('partials/footer') %>
+
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+}
+
+
+header i {
+    background-color:#1259c3;
+    color: white;
+    margin-left: 50%;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+header .buscador{
+    margin: 15px;
+}
+
+header .buscador p {
+    background-color: #ebebeb;
+    color: #666;
+    padding: 5px 5px;
+    margin-bottom: 2px;
+}
+
+header .buscador i{
+    background-color: #ebebeb;
+    color: black;
+    border-style: groove;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+header nav {
+    margin: 0px;
+    font-size: 12px;
+}
+
+header nav ul li{
+    list-style: none;
+    overflow: auto;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+}
+
+header nav i{
+    color: black;
+    background-color: #EAC926;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+header .credito i {
+    color: black;
+    background-color: #EAC926;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #ebebeb;
+}
+
+footer i {
+    color: #1259c3;
+    margin-left: 0%;
+}
+
+footer article {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+footer h3 {
+    line-height: 0px;
+}

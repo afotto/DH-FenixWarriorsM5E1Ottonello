@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: roboto;
+    background-color: gainsboro;
+}
+
+.main-header{
+    background-color:  #EAC926;
+    padding: 20px;
+}
+    .main-header-top-bar{
+        display: flex;
+        flex-flow: row wrap;          
+        flex: 1 1 auto;  
+    }
+        .logo {
+            width: 150px;
+            display: flex;
+            flex: 2 1 40%;
+        }
+        .buscador {
+            display: flex;
+            flex: 2 1 40%;
+            align-content: center;
+        }
+            .buscador p {
+                background-color: #ebebeb;
+                color: #666;
+                border-radius: 4px 0px 0px 4px;
+                text-align: left;
+                /*margin-bottom: 2px;
+                margin-right: 3px;
+                border: solid 1px;*/
+            }
+            .buscador i {
+                background-color: #ebebeb;
+                color:#666;
+                /*margin-bottom: 2px;
+                border: solid 1px;*/
+                border-radius: 0px 4px 4px 0px;
+                padding: 1px;
+            }
+        .copy-header {
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            display: flex;
+            flex: 1 1 auto;
+        }
+    
+.hamburger-button{
+    background-color:  #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.main-navbar{
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px; 
+}
+
+.img-banner{
+    max-width: 100%;
+}
+
+
+/*====================Formulario =================================*/
+.formulario{
+    text-align: center;
+}
+
+.login{
+    padding: 20px 15px;
+    margin-top: 2px;
+}
+.control-formulario{
+    margin-bottom: 15px;
+}
+.control-formulario label{
+    font-style: italic;
+    display: block;
+    margin-bottom: 5px;
+}
+.control{
+    width: 80%;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    border: none;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+.boton-formulario{
+    background-color:#1259c3;
+    border: none;
+    width: 80%;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    height: 30px;
+}
+.boton-formulario:hover{
+    background-color: #0022AA;
+    /* transform: scale(1.1); */
+}
+
+/*=====================Footer=====================*/
+.footer{
+    background-color: #ebebeb;
+    margin: 0%;
+    width: 100vw;
+    padding: 5%;
+}    
+    .footer i {
+        color: #1259c3;
+        margin-left: 45%;
+        background-color: #ebebeb;
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+    .footer i:hover{
+        color: #39b54a;
+        transform: scale(1.2);
+    }
+    .foot-i {
+        background-color: #ebebeb;
+    }
+    .foot-section{
+        background-color: #ebebeb;
+        margin-bottom: 5px;
+    }  
+    .foot-art{
+        background-color: #ebebeb;
+    }
+    .foot-art p {
+        background-color: #ebebeb;
+        text-align: center;
+    }
+    .foot-art h3 {
+        background-color: #ebebeb;
+        text-align: center;
+    }
+    .foot-art h5 {
+        background-color: #ebebeb;
+        margin-top: 20px;
+    }
+
+@media(min-width: 768px) {
+    .main-header-top-bar{
+        /*border: dotted;*/
+        display: flex;
+        justify-content: space-between;
+        flex: 1 1 auto;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+        .logo{
+            max-width: 200px;
+            flex: 3 1 30%;
+        }
+        .buscador{
+            flex: 3 1 30%;
+            margin-left: 10px;
+        }
+            .buscador p {
+                border: solid 1px;
+                border-radius: 4px;
+            }
+            .buscador i {
+                border: solid 1px;
+                margin-left: 2px;
+                border-radius: 4px;
+            }
+        .copy-header{
+            max-width: 350px;
+            text-align: right;
+            flex: 3 1 30%;
+        }
+
+    .hamburger-button{
+        display: none;
+    }
+    
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .main-navbar li {
+        margin: 0 5px;
+    }
+
+    .formulario{
+        display: flex;
+        justify-content: center;
+    }
+        .login{
+            width: 900px;
+            margin: 50px;
+        }
+
+    .footer{
+        display: flex;
+        flex-flow: row wrap;
+    }
+        .foot-section{
+            flex: 3 1 30%;
+        }
+
+}    
+

@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin:2px; /*distanciamiento entre el elemento y lo que lo rodea*/
+    padding : 2px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+    font-size: 12px;
+}
+.padre{
+
+}
+    .header {
+        margin: 5px;
+        padding: 5px;
+    }
+        .logo{
+            width: 50%;
+        }
+        .buscador {
+        }
+            .buscador p {
+                background-color: #ebebeb;
+                color: #666;
+                margin-bottom: 2px;
+            }
+            .buscador i {
+                background-color: #ebebeb;
+                color: #666;
+                margin-bottom: 2px;
+            }
+        .credito{
+
+        }
+        .menu {
+            margin-left: 0%;
+            padding: 0%;
+        }
+            .menu li {
+                list-style: none;
+                overflow: auto;
+                text-decoration: none;
+            }
+        .burger-menu i {
+            background-color:#1259c3;
+            color: white;
+            margin-left: 50%;
+            border-radius: 3px;
+            padding: 5px;
+        }
+    .img-banner{
+        width: 100vw;
+    }
+    .main {
+        margin: 5px;
+        padding: 5px;
+    }
+        .ultima-visita{
+
+        }
+            .articulos{
+
+            }
+                .titulares {
+                    font-size: 24px;
+                }
+                .precios {
+                    font-size: 18px;
+                }
+                .descuentos {
+                    font-size: 16px;
+                }
+                .product_img {
+                    width: 90vw;
+                }
+        .ofertas{
+
+        }
+            .art-ofertas{
+
+            }
+                .tit-of {
+                    font-size: 24px;
+                }
+                .prec-of {
+                    font-size: 18px;
+                }
+                .desc-of {
+                    font-size: 16px;
+                }
+                .product_img_of {
+                    width: 90vw;
+                }
+    .footer{
+        background-color: #ebebeb;
+        margin: 0%;
+        width: 100vw;
+    }    
+        .footer i {
+            color: #1259c3;
+            margin-left: 50%;
+            background-color: #ebebeb;
+
+        }
+        .foot-i {
+            background-color: #ebebeb;
+        }
+        .foot-section{
+            background-color: #ebebeb;
+        }  
+        .foot-art{
+            background-color: #ebebeb;
+        }
+        .foot-art p {
+            background-color: #ebebeb;
+            text-align: center;
+        }
+        .foot-art h3 {
+            background-color: #ebebeb;
+            text-align: center;
+        }
+        .foot-art h5 {
+            background-color: #ebebeb;
+        }
