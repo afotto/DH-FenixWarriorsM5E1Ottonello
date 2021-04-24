@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+
+    <main class="main-listado-products">
+        <h2>Lista de productos</h2>
+        <form action="/product/create" method="get">
+            <button class="b-new" type="submit">Nuevo</button>
+        </form>
+        <br>
+        <section class="listado-products">
+            <% products.forEach( product => { %> 
+                <!-- <%- include('partials/product', { product })    %> -->
+                <div class="listado-art">
+                    <h4><%= product.id %> - <%= product.name %></h4> 
+                    <form action="/product/<%=product.id%>" method="get">
+                        <button class="b-edit" type="submit">Edit</button>
+                    </form>
+                    <form action="/product/<%=product.id%>?_method=DELETE" method="post">
+                        <button class="b-delete" type="submit">Delete</button>
+                    </form>
+                </div>
+
+            <% }) %>            
+        </section>
+
+
+    </main>
+
+
+    <%- include('partials/footer') %>
+
+</body>
+</html>

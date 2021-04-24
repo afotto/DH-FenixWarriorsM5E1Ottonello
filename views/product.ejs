@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+
+    <main>
+        <section class="alta">
+            <h2>Alta de producto</h2>
+            <form action="/product" method="post">
+                <div class="control-formulario">
+                    <input type="text" placeholder="Nombre" name="name" class="control" required minlength="3">
+                </div>            
+                <div class="control-formulario">
+                    <input type="text" placeholder="Precio" name="price" class="control" required minlength="3">
+                </div>            
+                <div class="control-formulario">
+                    <input type="text" placeholder="Descuento" name="descuento" class="control" required minlength="3">
+                </div>            
+
+                <button type="submit">Confirmar</button>
+            </form>
+        </section>
+
+    </main>
+
+
+    <%- include('partials/footer') %>
+
+</body>
+</html>

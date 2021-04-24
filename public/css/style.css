@@ -242,7 +242,38 @@ body {
                 padding: 5px;
             }
         
-            
+.main-listado-products{
+    margin: 5px;
+    display: flex;
+}
+    .b-new{
+        background-color: blue;
+        margin-left: 5px;
+        border-radius: 4px;
+        color: white;
+        width: 60px;
+      }
+    .listado-products{
+            display: block;
+        }
+        .listado-art{
+            display: flex;
+            margin-top: 10px;
+        }
+        .listado-art button{
+            border-radius: 4px;
+            color: white;
+            width: 60px;
+        }
+        .b-edit{
+            background-color: green;
+            margin-left: 20px;
+        }
+        .b-delete{
+            background-color: red;
+            margin-left: 5px;
+        }
+
 /*=====================Footer=====================*/
 .footer{
     background-color: #ebebeb;

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+
+    <main>
+        <section class="alta">
+            <h2>Edición de producto</h2>
+            <form action="/product/<%=product.id%>?_method=PUT" method="post">
+
+
+                <div class="control-formulario">
+                    <label for="id">ID</label>
+                    <input class="control" type="number" name="id" id="id" value="<%= product.id %>">    
+                </div>
+                <div class="control-formulario">
+                    <label for="id">Descripción</label>
+                    <input type="text" placeholder="Nombre" name="name" class="control" required minlength="3" value="<%= product.name %>">
+                </div>            
+                <div class="control-formulario">
+                    <label for="id">Precio</label>
+                    <input type="text" placeholder="Precio" name="price" class="control" required minlength="3" value="<%= product.price %>">
+                </div>            
+                <div class="control-formulario">
+                    <label for="id">Descuento</label>
+                    <input type="text" placeholder="Descuento" name="descuento" class="control"  value="<%= product.descuento %>">
+                </div>            
+
+                <button type="submit">Confirmar</button>
+            </form>
+
+ 
+        </section>
+
+    </main>
+
+
+    <%- include('partials/footer') %>
+
+</body>
+</html>
